@@ -14,7 +14,7 @@ $(function() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(newScarf) // body data type must match "Content-Type" header
+            body: JSON.stringify(newScarfState) // body data type must match "Content-Type" header
         }).then(
             function() {
                 console.log("changed scarf to", newScarf);
@@ -29,7 +29,7 @@ $(function() {
         event.preventDefault();
 
         let newBurger = {
-            name: $("#burg").val().trim(),
+            burger_name: $("#burg").val().trim(),
             scarfed: $("[name=scarfed]:checked").val().trim()
         };
 

@@ -1,26 +1,35 @@
-<h1>Burgers!</h1>
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell text-center">
+        <h1>JD's Programmer Burgers</h1>
+      </div>
+    </div>
 
-<h2>Burgers that are not Scarfed!</h2>
-
-<ul>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell text-center">
+        <div class="callout">
+          <h5>Let JD&apos;sProgrammerBurgers &equals; &lpar; burger &equals;&gt; &lcub; <br> "Stoked you want to try our
+            awesomeBurgers!"
+            <br> If &lpar; you don't see a Burger you'd like... &rpar; &lcub;
+            <br> Dude... Customize Your Own Burger... &rcub; &rpar; .then
+            <br> when &lpar; We Make it Exactly like you want... &rpar; &lcub; <br> You &equals; "SCARF the BURGER"
+            &rcub;&semi;
+          </h5>
+          <div class="grid-x grid-padding-x">
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <p><ul>
   {{#each burgers}}
     {{#unless scarfed}}
       {{> burgers/burger-block scarf=true}}
     {{/unless}}
   {{/each}}
-</ul>
-
-<h2>Burgers that are scarfed!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if scarfed}}
-      {{> burgers/burger-block scarf=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
+</ul></p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <p><h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -31,8 +40,34 @@
   <div class="form-group">
     <label for="scarfed">Scarfed?</label><br>
     <input type="radio" name="scarfed" value="1" checked> Scarfed!<br>
-    <input type="radio" name="scarfed" value="0"> Hot & Ready
+    <input type="radio" name="scarfed" value="0"> Hot and Ready
   </div>
 
   <button type="submit">Add Burger</button>
-</form>
+</form></p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <h2>Burgers that are scarfed!</h2>
+                <p><ul>
+  {{#each burgers}}
+    {{#if scarfed}}
+      {{> burgers/burger-block scarf=false}}
+    {{/if}}
+  {{/each}}
+</ul>/p>
+              </div>
+            </div>
+          </div>
+        </div>
+           </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
