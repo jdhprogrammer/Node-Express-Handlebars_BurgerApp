@@ -25,12 +25,28 @@ li {
     background-color: rgb(90, 193, 90);
 }
 
+.change-scarf:hover {
+    margin: 2px;
+    padding: 8px;
+    color: rgb(10, 84, 50);
+    font-weight: 500;
+    background-color: rgb(166, 250, 165);
+}
+
 .delete-burger {
     margin: 2px;
     padding: 8px;
     color: white;
     font-weight: 600;
     background-color: rgb(229, 128, 128);
+}
+
+.delete-burger:hover {
+    margin: 2px;
+    padding: 8px;
+    color: rgb(79, 12, 12);
+    font-weight: 600;
+    background-color: rgb(255, 159, 159);
 }
 
 .burgerName {
@@ -44,9 +60,17 @@ li {
 #addBurger {
     margin: 2px;
     padding: 8px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     background-color: rgb(46, 122, 229);
+}
+
+#addBurger:hover {
+    margin: 2px;
+    padding: 8px;
+    color: rgb(14, 9, 61);
+    font-weight: 500;
+    background-color: rgb(100, 165, 255);
 }
 
 #intro {
@@ -88,8 +112,13 @@ h1.restName {
 h2.titles {
     font-family: "Fredericka the Great", cursive;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     font-size: 24pt;
+    margin-bottom: 10px;
+    padding: 9px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 37, 37);
+    border: rgb(110, 110, 110) 2px solid;
 }
 
 .intro {
