@@ -1,72 +1,80 @@
 <div class="grid-container">
-  <div class="grid-x grid-padding-x">
-    <div class="large-12 cell text-center">
+  <div id="title" class="grid-x grid-padding-x grid-padding-y grid-y" style="height: fit-content;">
+    <div class="cell text-center">
       <h1 class="restName">JD's Programmer Burgers</h1>
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x">
-    <div class="large-12 cell text-center">
-      <div >
-        <h5 style="font-weight: 500" class="intro">Let JD&apos;sProgrammerBurgers &equals; &lpar; burger &equals;&gt; &lcub; <br>
-          "Stoked you want to try our
-          awesomeBurgers!"
-          <br> If &lpar; you don't see a Burger you'd like... &rpar; &lcub;
-          <br> Dude... Customize Your Own Burger... &rcub; &rpar; .then
-          <br> when &lpar; We Make it Exactly like you want... &rpar; &lcub; <br> You &equals; "SCARF the BURGER"
-          &rcub;&semi;
-        </h5>
-        <div class="grid-x grid-padding-x">
-          <div class="large-4 medium-6 small-12 cell">
-            <div class="primary">
-              <h2>Your Menu</h2>
-              <ul class="a">
-                {{#each burgers}}
-                  {{#unless scarfed}}
-                    {{> burgers/burger-block scarf=true}}
-                  {{/unless}}
-                {{/each}}
-              </ul>
+  <div id="intro" class="grid-x grid-padding-x margin-bottom-3 grid-padding-y grid-y" style="height: fit-content;">
+    <div class="large-12 cell text-center margin-bottom-3">
 
+      <h5 style="font-weight: 500" class="intro">Let JD&apos;sProgrammerBurgers &equals; &lpar; burger &equals;&gt;
+        &lcub; <br>
+        "Stoked you want to try our
+        awesomeBurgers!"
+        <br> If &lpar; you don't see a Burger you'd like... &rpar; &lcub;
+        <br> Dude... Customize Your Own Burger... &rcub; &rpar; .then
+        <br> when &lpar; We Make it Exactly like you want... &rpar; &lcub; <br> You &equals; "SCARF the BURGER"
+        &rcub;&semi;
+      </h5>
+    </div>
+
+  </div>
+  <div id="belly" class="grid-padding-x grid-y grid-padding-y" style="height: 1000px;">
+  <div class="cell large-12 text-center">
+    <div class="grid-x grid-padding-x text-center">
+      <div class="callout large-4 medium-6 small-12 text-center">
+       
+          <h2 class="titles">Your Menu</h2>
+          <ul class="a">
+            {{#each burgers}}
+              {{#unless scarfed}}
+                {{> burgers/burger-block scarf=true}}
+              {{/unless}}
+            {{/each}}
+          </ul>
+
+        
+      </div>
+      <div class="callout large-4 medium-6 small-12 cell">
+
+        <div id="addB" class="primary">
+          <h2 class="titles">Add a Burger</h2>
+          <form id="newburger" class="create-form padding-x padding-y">
+
+            <div class="form-group">
+              <label class="addB" for="burg">Burger Name:</label>
+              <input type="text" id="burg" name="burger_name">
             </div>
-          </div>
-          <div class="large-4 medium-6 small-12 cell">
 
-            <div id="addB" class="primary">
-              <h2>Add a Burger</h2>
-              <form class="create-form">
-
-                <div class="form-group">
-                  <label for="burg">Burger Name:</label>
-                  <input type="text" id="burg" name="burger_name">
-                </div>
-
-                <div class="form-group">
-                  <label for="scarfed">Scarfed?</label><br>
-                  <input type="radio" name="scarfed" value="0"> Hot and Ready<br>
-                  <input type="radio" name="scarfed" value="1" checked> Scarfed!
-                </div>
-
-                <button id="addBurger" type="submit">Add Burger</button>
-              </form>
-              <img id="burgerPhoto" src="" alt="" srcset="">
+            <div class="form-group">
+              {{!-- <label for="scarfed">Scarfed?</label><br> --}}
+              <input type="radio" name="scarfed" value="0"> Hot and Ready<br>
+              <input type="radio" name="scarfed" value="1" checked> Scarfed!
             </div>
+
+            <button id="addBurger" type="submit">Add Burger</button>
+          </form>
+        </div>
+        <div class="large-4 medium-6 small-12 cell">
+          <img id="burgerPhoto" src="" alt="" srcset="">
           </div>
-          <div class="large-4 medium-6 small-12 cell">
-            <div class="primary">
-              <h2>Scarfed Burgers!</h2>
-              <ul class="a">
-                {{#each burgers}}
-                  {{#if scarfed}}
-                    {{> burgers/burger-block scarf=false}}
-                  {{/if}}
-                {{/each}}
-              </ul>
-            </div>
-          </div>
+      </div>
+      <div class="callout large-4 medium-6 small-12 cell">
+        <div class="primary">
+          <h2 class="titles">Scarfed Burgers!</h2>
+          <ul class="a">
+            {{#each burgers}}
+              {{#if scarfed}}
+                {{> burgers/burger-block scarf=false}}
+              {{/if}}
+            {{/each}}
+          </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>
 {{!-- <script src="assets/js/burgerPhoto.js"></script> --}}
