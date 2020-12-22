@@ -17,7 +17,7 @@ $(function() {
             body: JSON.stringify(newScarfState) // body data type must match "Content-Type" header
         }).then(
             function() {
-                console.log("changed scarf to", newScarf);
+                // console.log("changed scarf to", newScarf);
                 // Reload the page to get the updated list
                 location.reload();
             }
@@ -57,7 +57,7 @@ $(function() {
             method: 'DELETE',
         }).then(
             function() {
-                console.log("deleted burger", id);
+                // console.log("deleted burger", id);
                 // Reload the page to get the updated list
                 location.reload();
             }
