@@ -20,6 +20,7 @@ $(function() {
                 console.log("changed scarf to", newScarf);
                 // Reload the page to get the updated list
                 location.reload();
+                changeBurgerPhoto();
             }
         );
     });
@@ -45,6 +46,7 @@ $(function() {
                 console.log("created new burger");
                 // Reload the page to get the updated list
                 location.reload();
+                changeBurgerPhoto();
             }
         );
     });
@@ -60,11 +62,25 @@ $(function() {
                 console.log("deleted burger", id);
                 // Reload the page to get the updated list
                 location.reload();
+                changeBurgerPhoto();
             }
         );
     });
 });
 
+// window.onload = function() {
+//     myFunction()
+// };
+
+function changeBurgerPhoto() {
+
+    let burgerPhoto = document.querySelector("#burgerPhoto")
+
+    for (let i = 0; i < 1; i++) {
+        const burgerNumber = Math.floor(Math.random() * 8);
+        burgerPhoto.src = `/assets/images/burger${burgerNumber}.jpeg`;
+    };
+}
 // $.ajax("/api/burgers/" + id, {
 //   type: "PUT",
 //   data: newScarfState

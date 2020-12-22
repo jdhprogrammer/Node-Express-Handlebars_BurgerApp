@@ -33,11 +33,44 @@ li {
     background-color: rgb(229, 128, 128);
 }
 
-h6 {
-    font-weight: 700;
+.burgerName {
+    font-family: "Fredericka the Great", cursive;
+    font-weight: 600;
     margin: 4px;
     padding: 8px;
-    background-color: rgb(255, 248, 172);
+    background-color: rgb(255, 240, 139);
 }
 
-button {}
+#addBurger {
+    margin: 2px;
+    padding: 8px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(46, 122, 229);
+}
+
+.cell {
+    background-color: rgb(229, 229, 229);
+}
+
+ul.a {
+    list-style-type: none;
+}
+
+h1.restName {
+    font-family: "Fredericka the Great", cursive;
+}
+
+.intro {
+    font-family: "Fredericka the Great", cursive;
+    font-weight: 500;
+}
+
+
+/* 
+#addB {
+    
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+    
+} */

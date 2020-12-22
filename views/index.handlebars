@@ -1,76 +1,72 @@
 <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <h1>JD's Programmer Burgers</h1>
-      </div>
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell text-center">
+      <h1 class="restName">JD's Programmer Burgers</h1>
     </div>
-
-    <div class="grid-x grid-padding-x">
-      <div class="large-12 cell text-center">
-        <div class="callout">
-          <h5 style="font-weight: 500">Let JD&apos;sProgrammerBurgers &equals; &lpar; burger &equals;&gt; &lcub; <br> "Stoked you want to try our
-            awesomeBurgers!"
-            <br> If &lpar; you don't see a Burger you'd like... &rpar; &lcub;
-            <br> Dude... Customize Your Own Burger... &rcub; &rpar; .then
-            <br> when &lpar; We Make it Exactly like you want... &rpar; &lcub; <br> You &equals; "SCARF the BURGER"
-            &rcub;&semi;
-          </h5>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                
-                  <ul>
-  {{#each burgers}}
-    {{#unless scarfed}}
-      {{> burgers/burger-block scarf=true}}
-    {{/unless}}
-  {{/each}}
-</ul> 
-
-
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burg">Burger Name:</label>
-    <input type="text" id="burg" name="burger_name">
   </div>
 
-  <div class="form-group">
-    <label for="scarfed">Scarfed?</label><br>
-    <input type="radio" name="scarfed" value="1" checked> Scarfed!<br>
-    <input type="radio" name="scarfed" value="0"> Hot and Ready
-  </div>
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell text-center">
+      <div >
+        <h5 style="font-weight: 500" class="intro">Let JD&apos;sProgrammerBurgers &equals; &lpar; burger &equals;&gt; &lcub; <br>
+          "Stoked you want to try our
+          awesomeBurgers!"
+          <br> If &lpar; you don't see a Burger you'd like... &rpar; &lcub;
+          <br> Dude... Customize Your Own Burger... &rcub; &rpar; .then
+          <br> when &lpar; We Make it Exactly like you want... &rpar; &lcub; <br> You &equals; "SCARF the BURGER"
+          &rcub;&semi;
+        </h5>
+        <div class="grid-x grid-padding-x">
+          <div class="large-4 medium-6 small-12 cell">
+            <div class="primary">
+              <h2>Your Menu</h2>
+              <ul class="a">
+                {{#each burgers}}
+                  {{#unless scarfed}}
+                    {{> burgers/burger-block scarf=true}}
+                  {{/unless}}
+                {{/each}}
+              </ul>
 
-  <button type="submit">Add Burger</button>
-</form>
-              </div>
             </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <h2>Burgers that are scarfed!</h2>
-                <ul>
-  {{#each burgers}}
-    {{#if scarfed}}
-      {{> burgers/burger-block scarf=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-              </div>
+          </div>
+          <div class="large-4 medium-6 small-12 cell">
+
+            <div id="addB" class="primary">
+              <h2>Add a Burger</h2>
+              <form class="create-form">
+
+                <div class="form-group">
+                  <label for="burg">Burger Name:</label>
+                  <input type="text" id="burg" name="burger_name">
+                </div>
+
+                <div class="form-group">
+                  <label for="scarfed">Scarfed?</label><br>
+                  <input type="radio" name="scarfed" value="0"> Hot and Ready<br>
+                  <input type="radio" name="scarfed" value="1" checked> Scarfed!
+                </div>
+
+                <button id="addBurger" type="submit">Add Burger</button>
+              </form>
+              <img id="burgerPhoto" src="" alt="" srcset="">
+            </div>
+          </div>
+          <div class="large-4 medium-6 small-12 cell">
+            <div class="primary">
+              <h2>Scarfed Burgers!</h2>
+              <ul class="a">
+                {{#each burgers}}
+                  {{#if scarfed}}
+                    {{> burgers/burger-block scarf=false}}
+                  {{/if}}
+                {{/each}}
+              </ul>
             </div>
           </div>
         </div>
-           </div>
-        </div>
       </div>
-
-
-
-
-
-
-
+    </div>
+  </div>
+</div>
+{{!-- <script src="assets/js/burgerPhoto.js"></script> --}}

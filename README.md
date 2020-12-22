@@ -1,4 +1,17 @@
-# Node Express Handlebars
+# Node-Express-Handlebars_BurgerApp
+
+Developer: David Harris
+email: jdh.programmer@gmail.com - github: https://github.com/jdhprogrammer
+
+Project Repository: https://github.com/jdhprogrammer/Node-Express-Handlebars_BurgerApp
+
+Project Deployment: https://node-xprss-hndlbrs-burgerapp.herokuapp.com/
+
+## Node Express Handlebars
+
+Burger Menu Application - Node, Express, Handlebars, Javascript, ORM, MySQL, Heroku, JawsDB, HTML, CSS.
+A fun little application that allow user to "create their own custom burger" and then "scarf it"... even "unscarf it" or "throw it away".
+This was mainly a practice using all of the above listed languages, packages, libraries, techniques, and working on deploying apps with remote server setup.
 
 ### Overview
 
@@ -6,27 +19,10 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 ### Before You Begin
 
-* Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+- Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-* Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+- Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
 
-* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+- Each burger in the waiting area also has a `Scarf it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-* Your app will store every burger in a database, whether devoured or not.
-
-#### App Setup
-
-1. Create a GitHub repo called `burger` and clone it to your computer.
-
-2. Make a package.json file by running `npm init` from the command line.
-
-3. Install the Express npm package: `npm install express`.
-
-4. Create a server.js file.
-
-5. Install the Handlebars npm package: `npm install express-handlebars`.
-
-6. Install MySQL npm package: `npm install mysql`.
-
-7. Require the following npm packages inside of the server.js file:
-   * express
+- Your app will store every burger in a database, whether devoured or not.
