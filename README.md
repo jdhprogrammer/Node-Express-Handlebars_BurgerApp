@@ -113,8 +113,8 @@ Any contributions you make are **greatly appreciated**.
 <br>
 [<img src="./public/assets/images/screenshots/Foundation_CSS_Framework.jpeg?raw=true" height="350"/>](./public/assets/images/screenshots/Foundation_CSS_Framework.jpeg?raw=true)
 <br>
-[<img src="./public/assets/images/screenshots/burger_Menu.jpeg?raw=true" height="300"/>](./public/assets/images/screenshots/burger_Menu.jpeg?raw=true)
-[<img src="./public/assets/images/screenshots/Add_burger.jpeg?raw=true" height="300"/>](./public/assets/images/screenshots/Add_burger.jpeg?raw=true)
+[<img src="./public/assets/images/screenshots/Burger_Menu.jpeg?raw=true" height="300"/>](./public/assets/images/screenshots/Burger_Menu.jpeg?raw=true)
+[<img src="./public/assets/images/screenshots/Add_Burger.jpeg?raw=true" height="300"/>](./public/assets/images/screenshots/Add_burger.jpeg?raw=true)
 [<img src="./public/assets/images/screenshots/Scarfed_burgers.jpeg?raw=true" height="300"/>](./public/assets/images/screenshots/Scarfed_burgers.jpeg?raw=true)
 [<img src="./public/assets/images/screenshots/Function_Introduction.jpeg?raw=true" height="250"/>](./public/assets/images/screenshots/Function_Introduction.jpeg?raw=true)
 
